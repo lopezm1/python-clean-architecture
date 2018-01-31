@@ -1,0 +1,7 @@
+venv/
+.idea
+.cache/
+.coverage
+**/__pycache__/
+env
+cov_html/

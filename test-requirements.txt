@@ -1,0 +1,5 @@
+pytest
+tox
+coverage
+pytest-cov
+pytest-flask
