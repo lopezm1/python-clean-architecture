@@ -1,7 +1,8 @@
+from core.interfaces.person_interface import PersonInterface
+
 from core.common import response_objects as res
 from core.common.interactor import Interactor
-from core.repositories.interfaces.person_interface import PersonInterface
-from core.repositories.interfaces.course_interface import CourseInterface
+from core.interfaces.course_interface import CourseInterface
 
 
 class CourseRegistrationInteractor(Interactor):

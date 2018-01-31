@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from core.repositories.bases.base_mysql import BaseMySQL
+from core.interfaces.bases.base_mysql import BaseMySQL
 
 class CourseInterface(BaseMySQL):
 

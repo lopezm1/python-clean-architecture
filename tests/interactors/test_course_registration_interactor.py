@@ -39,3 +39,4 @@ def test_user_not_logged_in(valid_request):
     _person_repo.get_by_id.assert_not_called()
     _course_repo.get_by_code.assert_not_called()
     _person_repo.save.assert_not_called()
+
