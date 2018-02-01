@@ -17,15 +17,15 @@ class CourseRegistrationInteractor(Interactor):
     def process_request(self, request_object):
 
         # Check authentication service
-        if(self._auth_service.is_logged_in()):
+        if(not self._auth_service.is_logged_in()):
             return res.ResponseFailure.build_authentication_error("Access denied, User not authenticated.")
 
         # Get person object
-        person = self._person_repo.get_by_id(personal_id=request_object['personal_id'])
+        person = self._person_repo.get_by_id(personal_id=request_object.personal_id)
 
         errors = []
 
-        for code in request_object['course_codes']:
+        for code in request_object.course_codes:
             # Get course object
             course = self._course_repo.get_by_code(code=code)
 

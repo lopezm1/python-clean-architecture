@@ -10,7 +10,7 @@ class StudentRepository(PersonInterface):
         super().__init__()
 
     # In-Memory Data
-    _student = Student
+    _student = Student("Miguel", "Lopez", [], [])
 
     def get_by_id(self, personal_id):
         return self._student
